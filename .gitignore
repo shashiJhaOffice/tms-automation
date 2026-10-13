@@ -1,0 +1,11 @@
+
+# dependencies
+/node_modules
+
+# local secrets and generated TMS session
+src/.env
+.env
+.tms-session.json
+.tms-state.json
+.clockin-prompt-state.json
+logs/

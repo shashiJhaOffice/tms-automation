@@ -1,0 +1,27 @@
+{
+  "name": "tms-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "login": "tsx src/jobs/login.ts",
+    "tms": "tsx src/jobs/orchestrator.ts",
+    "clockin": "tsx src/jobs/clockIn.ts",
+    "wake-prompt": "tsx src/jobs/wakeClockInPrompt.ts",
+    "clockout": "tsx src/jobs/clockOut.ts",
+    "worksheet": "tsx src/jobs/fillWorksheet.ts",
+    "evening": "tsx src/jobs/evening.ts",
+    "logs": "mkdir -p logs && touch logs/tms-automation.log && tail -f logs/tms-automation.log"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
